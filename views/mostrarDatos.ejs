@@ -1,0 +1,31 @@
+<%- include("templates/encabezado") %>
+
+<h1 style="text-align: center;">Tus datos son: </h1>
+<br>
+<div class="contenedor">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Celular</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= nombre %></td>
+                <td><%= celular %></td>
+                <td><%= correo %></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+<main class="cajin7">
+    <div class="container cajin8">
+        <button class="cajin9" onclick="location.href='http://localhost:3000/mostrarUsuarios'">Mostrar Usuarios</button>
+    </div>
+</main>
+
+<%- include("templates/pie") %>

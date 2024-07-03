@@ -1,0 +1,38 @@
+<%- include("templates/encabezado") %>
+    <br>
+    <h1 style="text-align: center;">Productos</h1>
+    <br>
+    <div class="contenedor">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Editar / Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% productosCorrectos.forEach(producto => { %>
+            <tr>
+                <td><%= producto.idproductos %></td>
+                <td><%= producto.producto %></td>
+                <td><%= producto.descripcion %></td>
+                <td><%= producto.precio %></td>
+                <td>
+                    <a href="/editarProducto/<%= producto.idproductos %>">Editar</a>
+                    <a href="/borrarProducto/<%= producto.idproductos %>">Borrar</a>
+                </td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+<br>
+<main class="cajin7">
+    <div class="container cajin8">
+        <button class="cajin9" onclick="location.href='http://localhost:3000/agregarProducto'">Agregar Producto</button>
+    </div>
+</main>
+<%- include("templates/pie") %>

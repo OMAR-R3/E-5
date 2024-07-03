@@ -1,0 +1,115 @@
+
+
+
+.cajin1 {
+    width: 100%;
+    background-color: #3a3f44;
+    padding: 1rem 0;
+}
+
+.cajin2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cajin3 li {
+    margin: 0 1rem;
+}
+
+.cajin4 a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.cajin4 a:hover {
+    background-color: #575d63;
+}
+
+.taco {
+    position: relative;
+}
+
+.tacobtn {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.tacobtn:hover {
+    background-color: #575d63;
+}
+
+.taco-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.taco-content a {
+    color: #3a3f44;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.taco-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.taco:hover .taco-content {
+    display: block;
+}
+
+.taco:hover .tacobtn {
+    background-color: #575d63;
+}
+
+.cajin8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.cajin9, .cajin10 {
+    background-color: #3a3f44;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.cajin9:hover, .cajin10:hover {
+    background-color: #575d63;
+}
+
+@media (min-width: 600px) {
+    .cajin8 {
+        flex-direction: row;
+    }
+
+    .cajin9, .cajin10 {
+        width: auto;
+        flex: 1;
+        margin: 1rem;
+    }
+}
